@@ -1,0 +1,38 @@
+{
+    "name": "C-Tartan",
+    "dataset": "TartanAir",
+    "val_datasets": ["sintel-clean", "sintel-final", "kitti"],
+    "monitor": null,
+
+    "patch_embed": "dinov2_vitl14_reg",
+    "patch_size": 14,
+    "feature_channels": 128,
+    "fix_width": false,
+    "fuse_cnn": true,
+    "freeze_backbone": false,
+    "upsample_factor": 4,
+    "iters": 4,
+    "random_frame": false,
+    "use_self_attn_propagation": false,
+    "use_temp_attn": false,
+
+    "image_size": [480, 640],
+    "max_frames": 2,
+    "bidirectional": false,
+    "effective_batch_size": 128,
+    "accumulate_grad_batches": 1,
+    "num_workers": 16,
+    "epsilon": 1e-8,
+    "lr": 2e-4,
+    "wdecay": 1e-4,
+    "dropout": 0,
+    "clip": 1.0,
+    "gamma": 0.9,
+    "num_steps": 30000,
+    "val_steps": 3000,
+    "save_steps": 2000,
+    "freeze_bn": false,
+    
+    "restore_ckpt": "./checkpoints/Chairs.ckpt",
+    "coarse_config": null
+}

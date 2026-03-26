@@ -1,0 +1,16 @@
+torch>=2.7
+torchvision>=0.22
+pytorch-lightning>=2.0
+numpy
+opencv-python
+einops
+scipy
+imageio[ffmpeg]
+h5py
+safetensors
+Pillow
+matplotlib
+tqdm
+wandb
+gradio
+huggingface_hub

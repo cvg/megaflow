@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "megaflow"
+version = "1.0.0"
+description = "MegaFlow: Zero-Shot Large Displacement Optical Flow"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.12"
+authors = [
+    {name = "Dingxi Zhang"},
+    {name = "Fangjinhua Wang"},
+    {name = "Marc Pollefeys"},
+    {name = "Haofei Xu"},
+]
+
+dependencies = [
+    "torch>=2.7",
+    "torchvision>=0.22",
+    "pytorch-lightning>=2.0",
+    "numpy",
+    "opencv-python",
+    "einops",
+    "scipy",
+    "imageio[ffmpeg]",
+    "h5py",
+    "safetensors",
+    "Pillow",
+    "matplotlib",
+    "tqdm",
+    "wandb",
+    "gradio",
+    "huggingface_hub",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[project.urls]
+Homepage = "https://kristen-z.github.io/projects/megaflow/"
+Repository = "https://github.com/cvg/megaflow"
+Paper = "https://arxiv.org/abs/"
+
+[tool.setuptools.packages.find]
+include = ["megaflow*", "config*", "scripts*"]

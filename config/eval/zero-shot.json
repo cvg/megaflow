@@ -1,0 +1,40 @@
+{
+    "name": "sintel",
+    "dataset": "sintel",
+    "val_datasets": [
+        "kitti",
+        "sintel-clean",
+        "sintel-final"
+    ],
+    "monitor": null,
+    "patch_embed": "dinov2_vitl14_reg",
+    "patch_size": 14,
+    "feature_channels": 128,
+    "fix_width": true,
+    "fuse_cnn": true,
+    "freeze_backbone": false,
+    "upsample_factor": 4,
+    "iters": 8,
+    "random_frame": false,
+    "use_self_attn_propagation": false,
+    "use_temp_attn": true,
+    "image_size": [
+        432,
+        960
+    ],
+    "max_frames": 4,
+    "bidirectional": false,
+    "effective_batch_size": 32,
+    "accumulate_grad_batches": 1,
+    "num_workers": 4,
+    "epsilon": 1e-8,
+    "lr": 3e-5,
+    "wdecay": 1e-5,
+    "dropout": 0,
+    "clip": 1.0,
+    "gamma": 0.85,
+    "num_steps": 12500,
+    "val_steps": 1250,
+    "restore_ckpt": "./checkpoints/C-Tartan-T-TSKH-mf.ckpt",
+    "coarse_config": null
+}
