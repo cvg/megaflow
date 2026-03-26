@@ -403,7 +403,7 @@ class MpiSintel(FlowDataset):
         self,
         aug_params=None,
         split="train",
-        root="../datasets/Sintel",
+        root="datasets/Sintel",
         dstype="clean",
         scene_params={},
     ):
@@ -451,7 +451,7 @@ class FlyingChairs(FlowDataset):
         self,
         aug_params=None,
         split="train",
-        root="../datasets/FlyingChairs_release/data",
+        root="datasets/FlyingChairs_release/data",
         scene_params={},
     ):
         super(FlyingChairs, self).__init__(
@@ -598,7 +598,7 @@ class FlyingThings3D(FlowDataset):
 
 class KITTIN(FlowDataset):
     def __init__(
-        self, aug_params=None, split="train", root="../datasets/KITTI", scene_params={}
+        self, aug_params=None, split="train", root="datasets/KITTI", scene_params={}
     ):
         super(KITTIN, self).__init__(
             aug_params=aug_params, scene_params=scene_params, sparse=True

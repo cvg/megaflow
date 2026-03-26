@@ -53,7 +53,7 @@ class MegaFlow(nn.Module):
     _HF_MODELS = {
         "megaflow-flow": {"repo_id": "Kristen-Z/MegaFlow", "filename": "megaflow-flow.safetensors"},
         "megaflow-track": {"repo_id": "Kristen-Z/MegaFlow", "filename": "megaflow-track.safetensors"},
-        "megaflow-zero-shot": {"repo_id": "Kristen-Z/MegaFlow", "filename": "megaflow-zero-shot.safetensors"},
+        "megaflow-chairs-things": {"repo_id": "Kristen-Z/MegaFlow", "filename": "megaflow-chairs-things.safetensors"},
     }
 
     @classmethod
@@ -61,7 +61,7 @@ class MegaFlow(nn.Module):
         """Load a pretrained MegaFlow model from HuggingFace Hub.
 
         Args:
-            model_name: One of 'megaflow-flow' (optical flow), 'megaflow-zero-shot'
+            model_name: One of 'megaflow-flow' (optical flow), 'megaflow-chairs-things'
                 (flow trained on FlyingChairs/FlyingThings only), or 'megaflow-track'
                 (point tracking).
             device: Device to load the model on.
@@ -213,7 +213,7 @@ class MegaFlow(nn.Module):
         self.feature_channels = feature_channels
         self.upsample_factor = upsample_factor
         self.reg_refine = reg_refine
-        self.refine_factor = upsample_factor #if self.disable_upsampler else 4
+        self.refine_factor = upsample_factor
         self.use_self_attn_propagation = use_self_attn_propagation
         self.fuse_cnn = fuse_cnn
 

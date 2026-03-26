@@ -42,7 +42,7 @@ if __name__ == "__main__":
         model = MegaFlowLit(args)
         # Choose the right HF model
         if "zero-shot" in args.cfg:
-            hf_name = "megaflow-zero-shot"
+            hf_name = "megaflow-chairs-things"
         else:
             hf_name = "megaflow-flow"
 

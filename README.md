@@ -36,7 +36,7 @@ MegaFlow leverages pre-trained Vision Transformer features to naturally capture 
 ```bash
 # Clone the repository
 git clone https://github.com/cvg/megaflow.git
-cd MegaFlow
+cd megaflow
 
 # Create local conda environment
 conda create -n megaflow python=3.12 -y
@@ -66,7 +66,7 @@ Pretrained checkpoints are available on [🤗 HuggingFace](https://huggingface.c
 | Model Name | Description |
 |------------|-------------|
 | `megaflow-flow` | Optical flow (default) |
-| `megaflow-zero-shot` | Optical flow trained on FlyingThings and FlyingChairs |
+| `megaflow-chairs-things` | Optical flow trained on FlyingThings and FlyingChairs |
 | `megaflow-track` | Point tracking (Kubric fine-tuned) |
 
 ```python
@@ -115,9 +115,9 @@ You can also run `python demo_gradio.py` to launch a local web UI, or open the [
 
 ## Datasets
 
-To train MegaFlow, you will need to download the required datasets: [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html), [FlyingThings3D](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html), [Sintel](http://sintel.is.tue.mpg.de/), [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow), [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/), [TartanAir](https://theairlab.org/tartanair-dataset/), and [Spring](https://spring-benchmark.org/).
+To train and evaluate MegaFlow, you will need to download the required datasets: [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html), [FlyingThings3D](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html), [Sintel](http://sintel.is.tue.mpg.de/), [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow), [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/), [TartanAir](https://theairlab.org/tartanair-dataset/), and [Spring](https://spring-benchmark.org/).
 
-For tracking, you will need to download Kubric and TAP-Vid:
+For tracking, you will need to download processed Kubric from  [AllTracker](https://github.com/ShenZheng2000/AllTracker) and TAP-Vid:
 - **Kubric:** Download the 24-frame data ([kubric_au.tar.gz](https://huggingface.co/datasets/aharley/alltracker_data/resolve/main/kubric_au.tar.gz?download=true)) and the 64-frame data parts ([part1](https://huggingface.co/datasets/aharley/alltracker_data/resolve/main/ce64_kub_aa?download=true), [part2](https://huggingface.co/datasets/aharley/alltracker_data/resolve/main/ce64_kub_ab?download=true), [part3](https://huggingface.co/datasets/aharley/alltracker_data/resolve/main/ce64_kub_ac?download=true)).
 - **TAP-Vid:** Download the TAP-Vid-DAVIS, TAP-Vid-RGB-stacking and TAP-Vid-Kinetics datasets from [here](https://github.com/google-deepmind/tapnet/tree/main/tapnet/tapvid) for evaluation.
 

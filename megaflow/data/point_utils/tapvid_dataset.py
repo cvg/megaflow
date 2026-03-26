@@ -14,7 +14,7 @@ random.seed(42)
 class DavisDataset(PointDataset):
     def __init__(
             self,
-            data_root='../datasets/TAP_Vid/tapvid_davis',
+            data_root='datasets/TAP_Vid/tapvid_davis',
             crop_size=(384,512),
             seq_len=None,
             only_first=False,
@@ -86,7 +86,7 @@ def decode(frame):
 class KineticsDataset(PointDataset):
     def __init__(
         self,
-        data_root='../datasets/TAP_Vid/tapvid_kinetics',
+        data_root='datasets/TAP_Vid/tapvid_kinetics',
         crop_size=(384,512),
         seq_len=None,
         only_first=False,
@@ -153,7 +153,7 @@ class KineticsDataset(PointDataset):
 class RGBStackingDataset(PointDataset):
     def __init__(
             self,
-            data_root='../datasets/TAP_Vid/tapvid_rgb_stacking',
+            data_root='datasets/TAP_Vid/tapvid_rgb_stacking',
             crop_size=(384,512),
             seq_len=None,
             only_first=False,
@@ -222,7 +222,7 @@ class RGBStackingDataset(PointDataset):
 class RobotapDataset(PointDataset):
     def __init__(
             self,
-            data_root='../datasets/TAP_Vid/robotap',
+            data_root='datasets/TAP_Vid/robotap',
             crop_size=(384,512),
             seq_len=None,
             only_first=False,
