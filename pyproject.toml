@@ -43,7 +43,7 @@ dev = [
 [project.urls]
 Homepage = "https://kristen-z.github.io/projects/megaflow/"
 Repository = "https://github.com/cvg/megaflow"
-Paper = "https://arxiv.org/abs/"
+Paper = "https://arxiv.org/abs/2603.25739"
 
 [tool.setuptools.packages.find]
 include = ["megaflow*", "config*", "scripts*"]

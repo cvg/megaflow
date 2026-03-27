@@ -11,7 +11,7 @@
   <sup>3</sup> <em>University of Tübingen, Tübingen AI Center</em>
 
   <a href="https://kristen-z.github.io/projects/megaflow/"><img src="https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=white" alt="Project Page"></a>
-  <a href="https://arxiv.org/abs/"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?style=flat&logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <a href="https://arxiv.org/abs/2603.25739"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?style=flat&logo=arxiv&logoColor=white" alt="arXiv"></a>
   <a href="https://huggingface.co/Kristen-Z/MegaFlow"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow.svg" alt="Models"></a>
   <a href="https://colab.research.google.com/github/cvg/megaflow/blob/main/demo_colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
@@ -170,10 +170,10 @@ If you find MegaFlow useful in your research, please cite:
 
 ```bibtex
 @article{zhang2026megaflow,
-  title     = {MegaFlow: Zero-Shot Large Displacement Optical Flow},
-  author    = {Zhang, Dingxi and Wang, Fangjinhua and Pollefeys, Marc and Xu, Haofei},
-  journal   = {arXiv preprint arXiv:XXXX.XXXXX},
-  year      = {2026}
+  title   = {MegaFlow: Zero-Shot Large Displacement Optical Flow},
+  author  = {Zhang, Dingxi and Wang, Fangjinhua and Pollefeys, Marc and Xu, Haofei},
+  journal = {arXiv preprint arXiv:2603.25739},
+  year    = {2026}
 }
 ```
 
