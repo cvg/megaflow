@@ -12,7 +12,7 @@
 
   <a href="https://kristen-z.github.io/projects/megaflow/"><img src="https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=white" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2603.25739"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?style=flat&logo=arxiv&logoColor=white" alt="arXiv"></a>
-  <a href="https://huggingface.co/Kristen-Z/MegaFlow"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow.svg" alt="Models"></a>
+  <a href="https://huggingface.co/spaces/Kristen-Z/MegaFlow-demo" target="_blank"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Demo-yellow.svg" alt="Demo"></a>
   <a href="https://colab.research.google.com/github/cvg/megaflow/blob/main/demo_colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
 
@@ -111,7 +111,8 @@ python demo_flow.py --input assets/longboard.mp4 --output output/longboard_flow.
 # Tracks points and auto-downloads the megaflow-track model
 python demo_track.py --input assets/apple.mp4 --grid_size 8
 ```
-You can also run `python demo_gradio.py` to launch a local web UI, or open the [Colab notebook](https://colab.research.google.com/github/cvg/megaflow/blob/main/demo_colab.ipynb) for an interactive online demo.
+You can also run `python demo_gradio.py` to launch a local web UI, try our [HuggingFace demo](https://huggingface.co/spaces/Kristen-Z/MegaFlow-demo) or open the [Colab notebook](https://colab.research.google.com/github/cvg/megaflow/blob/main/demo_colab.ipynb) for an interactive online demo directly in the browser.
+
 
 ## Datasets
 
