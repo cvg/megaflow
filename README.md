@@ -10,10 +10,13 @@
   <sup>2</sup> <em>Microsoft</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <sup>3</sup> <em>University of Tübingen, Tübingen AI Center</em>
 
+  <strong>ECCV 2026</strong>
+
   <a href="https://kristen-z.github.io/projects/megaflow/"><img src="https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=white" alt="Project Page"></a>
   <a href="https://arxiv.org/abs/2603.25739"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?style=flat&logo=arxiv&logoColor=white" alt="arXiv"></a>
   <a href="https://huggingface.co/spaces/Kristen-Z/MegaFlow-demo" target="_blank"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Demo-yellow.svg" alt="Demo"></a>
   <a href="https://colab.research.google.com/github/cvg/megaflow/blob/main/demo_colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+  <a href="https://www.youtube.com/watch?v=H_W7EhGDfC4"><img src="https://img.shields.io/badge/Video-YouTube-red?style=flat&logo=youtube&logoColor=white" alt="Video"></a>
 </div>
 
 <p align="center">
@@ -170,11 +173,11 @@ python -m scripts.evaluate --cfg config/eval/tapvid.json
 If you find MegaFlow useful in your research, please cite:
 
 ```bibtex
-@article{zhang2026megaflow,
-  title   = {MegaFlow: Zero-Shot Large Displacement Optical Flow},
-  author  = {Zhang, Dingxi and Wang, Fangjinhua and Pollefeys, Marc and Xu, Haofei},
-  journal = {arXiv preprint arXiv:2603.25739},
-  year    = {2026}
+@inproceedings{zhang2026megaflow,
+  title     = {MegaFlow: Zero-Shot Large Displacement Optical Flow},
+  author    = {Zhang, Dingxi and Wang, Fangjinhua and Pollefeys, Marc and Xu, Haofei},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026}
 }
 ```
 
